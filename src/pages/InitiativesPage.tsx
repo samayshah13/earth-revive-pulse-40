@@ -113,7 +113,7 @@ const InitiativesPage = () => {
             description: "A learner-led UN-inspired climate simulation where students from Grades 6-12 act as country representatives, negotiate on pressing climate issues, and design actionable policies aligned with UN SDGs. Join us November 15-16, 2025 at JBCN International School, Parel. Track themes include: Impact of Geopolitical Issues on Climate Change, Climate Finance, Cities & Infrastructure, Carbon Market Mechanisms, and Advanced Technologies. Total prize pool of ₹1,00,000 for top performers!",
             color: "from-accent/20 to-accent/5",
             iconColor: "text-accent",
-            status: "UPCOMING"
+            status: "FLAGSHIP EVENT"
           }, {
             id: 'forest-cleanup-drive-2025',
             icon: TreePine,
@@ -214,7 +214,7 @@ const InitiativesPage = () => {
                     {/* Initiative Image */}
                     <div className="w-full lg:w-1/2 min-h-[250px] sm:min-h-[300px] lg:min-h-[400px] relative overflow-hidden">
                       <div className="absolute top-4 left-4 z-10">
-                        <Badge className={initiative.status === 'UPCOMING' ? "bg-gradient-to-r from-yellow-500 to-orange-500 text-background font-semibold" : "bg-gradient-eco text-background font-semibold"}>
+                        <Badge className={initiative.status === 'FLAGSHIP EVENT' ? "bg-gradient-to-r from-purple-600 to-pink-600 text-background font-semibold" : "bg-gradient-eco text-background font-semibold"}>
                           {initiative.status || 'COMPLETED'}
                         </Badge>
                       </div>
