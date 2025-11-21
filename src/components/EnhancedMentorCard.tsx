@@ -21,7 +21,7 @@ const EnhancedMentorCard = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-secondary/5 to-primary/5 rounded-3xl" />
       
 
-      <Card className="relative overflow-hidden border-2 border-transparent bg-card/50 backdrop-blur-sm shadow-glow">
+      <Card className="relative border-2 border-transparent bg-card/50 backdrop-blur-sm shadow-glow">
         {/* Sophisticated border animation */}
         <motion.div
           className="absolute inset-0 rounded-lg"
