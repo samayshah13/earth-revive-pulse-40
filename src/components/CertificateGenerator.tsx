@@ -110,25 +110,25 @@ const CertificateGenerator = () => {
               />
               {/* Name */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center" style={{ marginTop: "-8%" }}>
-                  <p 
-                    className="font-alex-brush text-2xl sm:text-3xl md:text-4xl"
-                    style={{ 
-                      fontFamily: "'Alex Brush', cursive",
-                      color: "#000000",
-                      letterSpacing: "0.05em",
-                      lineHeight: "1.2"
-                    }}
-                  >
-                    {name}
-                  </p>
-                </div>
+              <div className="text-center" style={{ marginTop: "-8%" }}>
+                <p 
+                  className="font-alex-brush text-lg sm:text-2xl md:text-3xl lg:text-4xl"
+                  style={{ 
+                    fontFamily: "'Alex Brush', cursive",
+                    color: "#000000",
+                    letterSpacing: "0.05em",
+                    lineHeight: "1.2"
+                  }}
+                >
+                  {name}
+                </p>
+              </div>
               </div>
 
               {/* Date in bottom left corner */}
               <div className="absolute bottom-0 left-0 w-full flex items-end" style={{ paddingBottom: "10.5%", paddingLeft: "15%" }}>
                 <p 
-                  className="text-[10px] sm:text-xs md:text-sm font-medium"
+                  className="text-[8px] sm:text-[10px] md:text-xs lg:text-sm font-medium"
                   style={{ 
                     fontFamily: "'Inter', sans-serif",
                     color: "#000000",
