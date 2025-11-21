@@ -58,14 +58,8 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      cleanup_old_sessions: {
-        Args: Record<PropertyKey, never>
-        Returns: undefined
-      }
-      get_active_visitor_count: {
-        Args: Record<PropertyKey, never>
-        Returns: number
-      }
+      cleanup_old_sessions: { Args: never; Returns: undefined }
+      get_active_visitor_count: { Args: never; Returns: number }
       upsert_visitor_session: {
         Args: { p_session_id: string }
         Returns: undefined
