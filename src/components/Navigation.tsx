@@ -2,6 +2,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useState, useRef } from 'react';
 import { Menu, X, Leaf, Instagram, Heart, ChevronDown } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+import jbcnLogo from '@/assets/jbcn-logo.png';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,9 +68,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 bg-gradient-earth rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-              <Leaf className="w-6 h-6 text-white" />
-            </div>
+            <img 
+              src={jbcnLogo} 
+              alt="JBCN Climate Action Project" 
+              className="w-10 h-10 rounded-xl group-hover:scale-110 transition-transform duration-300"
+            />
             <span className="text-lg font-bold hidden sm:block">CLIMATE ACTION PROJECT</span>
           </Link>
 
