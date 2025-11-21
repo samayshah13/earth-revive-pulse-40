@@ -77,7 +77,7 @@ const EnhancedMentorCard = () => {
                 </div>
 
                 {/* Static Badge - Overlapping Image */}
-                <div className="absolute -bottom-3 -right-3 w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 lg:w-24 lg:h-24 z-10">
+                <div className="absolute -bottom-3 -right-3 w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 lg:w-24 lg:h-24 z-30">
                   <div className="relative w-full h-full">
                     {/* Glow effects */}
                     <motion.div
