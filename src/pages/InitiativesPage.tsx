@@ -97,7 +97,7 @@ const InitiativesPage = () => {
             </p>
             <div className="flex flex-wrap gap-2 sm:gap-4 justify-center">
               <Badge variant="secondary" className="text-xs sm:text-sm px-2 sm:px-4 py-1 sm:py-2">
-                10 Past Initiatives
+                11 Past Initiatives
               </Badge>
               <Badge variant="secondary" className="text-xs sm:text-sm px-2 sm:px-4 py-1 sm:py-2">Active</Badge>
               <Badge variant="secondary" className="text-xs sm:text-sm px-2 sm:px-4 py-1 sm:py-2">JOIN !!!</Badge>
@@ -257,13 +257,17 @@ const InitiativesPage = () => {
       {/* Call to Action */}
       <section className="py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-primary/10 via-background to-secondary/10">
         <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="max-w-4xl mx-auto text-center"
-          >
+          <motion.div initial={{
+          opacity: 0,
+          y: 20
+        }} whileInView={{
+          opacity: 1,
+          y: 0
+        }} viewport={{
+          once: true
+        }} transition={{
+          duration: 0.6
+        }} className="max-w-4xl mx-auto text-center">
             <div className="flex justify-center mb-6">
               <Leaf className="w-16 h-16 text-primary" />
             </div>
@@ -274,11 +278,7 @@ const InitiativesPage = () => {
               Take on our 10-challenge initiative and become a certified Climate Champion. 
               Every action counts towards a sustainable future!
             </p>
-            <Button 
-              size="lg" 
-              className="text-lg px-8 py-6"
-              onClick={() => window.location.href = '/initiatives/your-initiative'}
-            >
+            <Button size="lg" className="text-lg px-8 py-6" onClick={() => window.location.href = '/initiatives/your-initiative'}>
               Start Your Initiative
               <ArrowRight className="ml-2 w-5 h-5" />
             </Button>
