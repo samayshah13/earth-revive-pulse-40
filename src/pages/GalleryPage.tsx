@@ -251,6 +251,86 @@ const GalleryPage = () => {
       category: 'Conservation',
       image: '/gallery/sustainability-project.jpg',
       size: 'wide'
+    },
+    {
+      id: 29,
+      type: 'image',
+      title: 'MCOP Event Highlights',
+      category: 'Events',
+      image: '/gallery/mcop-event-1.jpg',
+      size: 'wide'
+    },
+    {
+      id: 30,
+      type: 'image',
+      title: 'Environmental Workshop',
+      category: 'Events',
+      image: '/gallery/mcop-event-2.avif',
+      size: 'square'
+    },
+    {
+      id: 31,
+      type: 'image',
+      title: 'Climate Action Session',
+      category: 'Awareness',
+      image: '/gallery/mcop-event-3.avif',
+      size: 'tall'
+    },
+    {
+      id: 32,
+      type: 'image',
+      title: 'Team Collaboration',
+      category: 'Volunteers',
+      image: '/gallery/mcop-event-4.jpg',
+      size: 'square'
+    },
+    {
+      id: 33,
+      type: 'image',
+      title: 'Youth Environmental Leaders',
+      category: 'Events',
+      image: '/gallery/mcop-event-5.jpg',
+      size: 'wide'
+    },
+    {
+      id: 34,
+      type: 'image',
+      title: 'Green Initiative Meeting',
+      category: 'Awareness',
+      image: '/gallery/mcop-event-6.jpg',
+      size: 'tall'
+    },
+    {
+      id: 35,
+      type: 'image',
+      title: 'Sustainability Discussion',
+      category: 'Events',
+      image: '/gallery/mcop-event-7.jpg',
+      size: 'square'
+    },
+    {
+      id: 36,
+      type: 'image',
+      title: 'Environmental Planning Session',
+      category: 'Events',
+      image: '/gallery/mcop-event-8.jpg',
+      size: 'wide'
+    },
+    {
+      id: 37,
+      type: 'image',
+      title: 'Climate Champions Gathering',
+      category: 'Volunteers',
+      image: '/gallery/mcop-event-9.jpg',
+      size: 'square'
+    },
+    {
+      id: 38,
+      type: 'image',
+      title: 'Eco Leadership Forum',
+      category: 'Events',
+      image: '/gallery/mcop-event-10.jpg',
+      size: 'tall'
     }
   ];
 
