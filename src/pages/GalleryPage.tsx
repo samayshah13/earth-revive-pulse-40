@@ -344,13 +344,6 @@ const GalleryPage = () => {
     { id: 7, title: 'Youth Environmental Leaders', embedUrl: 'https://streamable.com/e/sl857j', aspectRatio: '177.778%' },
   ];
 
-  const getGridClasses = (size: string) => {
-    switch (size) {
-      case 'tall': return 'md:row-span-2';
-      case 'wide': return 'md:col-span-2';
-      default: return '';
-    }
-  };
 
 
   return (
@@ -493,11 +486,11 @@ const GalleryPage = () => {
           </div>
         </section>
 
-        {/* Elegant Gallery Grid */}
+        {/* Elegant Gallery Grid - Masonry Layout */}
         <section className="px-4 pb-32 relative">
           <div className="container mx-auto">
             <motion.div 
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+              className="columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: isLoaded ? 1 : 0 }}
               transition={{ duration: 1 }}
@@ -505,11 +498,11 @@ const GalleryPage = () => {
               {galleryItems.map((item, index) => (
                 <motion.div
                   key={item.id}
-                  className="group relative"
+                  className="group relative break-inside-avoid mb-4"
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ 
-                    delay: index * 0.1,
+                    delay: Math.min(index * 0.05, 1),
                     duration: 0.6,
                     ease: "easeOut"
                   }}
@@ -543,8 +536,8 @@ const GalleryPage = () => {
                         </div>
 
                         {/* Title */}
-                        <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
-                          <h3 className="text-white font-semibold text-lg leading-tight">
+                        <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
+                          <h3 className="text-white font-semibold text-sm leading-tight">
                             {item.title}
                           </h3>
                         </div>
