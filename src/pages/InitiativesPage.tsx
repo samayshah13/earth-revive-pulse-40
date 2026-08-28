@@ -106,14 +106,45 @@ const InitiativesPage = () => {
 
           <div className="space-y-8">
             {[{
+            id: 'mcop-2026',
+            icon: Globe,
+            title: "MCOP 2026 - Model Conference of Parties",
+            year: "2026",
+            image: "/gallery/mcop-2026.jpg",
+            imageAlt: "MCOP 2026 delegates and mentors with certificates at JBCN International School, Parel",
+            description: "India's first UN-backed COP simulation, presented by JBCN International School in collaboration with the JBCN Climate Action Project and CIU (Change Is Us) — our second year partnering with MCOP. Learners from Grades 6-12 step into the roles of country representatives, negotiating climate policy aligned with the UN SDGs. Date: 22nd August 2026 at JBCN International School, Serdia House, Parel. Participation fee ₹2,199 (inclusive of meals, delegate kit, memorabilia & taxes). Junior tracks cover Renewable Energy for All, Food, Water & Agriculture, and Coastal Nations & Resilience; senior tracks cover Climate Justice & Indigenous Rights, Geopolitics of Climate & Energy, and Climate Migration & Human Security. Top performers are recognised as Best Delegate, Outstanding Delegate and Special Mention.",
+            color: "from-accent/20 to-accent/5",
+            iconColor: "text-accent",
+            status: "FLAGSHIP EVENT"
+          }, {
+            id: 'earth-day-assembly-2026',
+            icon: Globe,
+            title: "Earth Day Assembly 2026",
+            year: "2026",
+            image: "/gallery/earth-day-assembly-2026.jpg",
+            imageAlt: "Climate Action Project Earth Day Assembly 2026 stage at JBCN International School, Parel",
+            description: "Our Earth Day Assembly 2026 brought the climate message to life through a powerful student-led act. Learners performed a dramatic piece portraying the Earth's plea — scenes of deforestation, choking air, plastic-filled oceans and rising heat gave way to a hopeful turn where young changemakers chose to act. Through dialogue, movement and music, the cast urged the audience to cut waste, save energy, plant more and consume responsibly. The performance was followed by pledges from every grade, turning a single morning assembly into a school-wide commitment to protect the planet.",
+            color: "from-secondary/20 to-secondary/5",
+            iconColor: "text-secondary"
+          }, {
+            id: 'earth-day-flash-mob-2026',
+            icon: Palette,
+            title: "Earth Day Flash Mob 2026 - Marine Drive",
+            year: "2026",
+            image: "/gallery/earth-day-flash-mob-2026.jpg",
+            imageAlt: "Students holding hand-made climate posters during the Earth Day flash mob at Marine Drive, Mumbai",
+            description: "We organised a Flash Mob and Walk of Awareness at Marine Drive, Mumbai, to celebrate Earth Day and promote environmental consciousness. The event featured vibrant posters created by students and an energetic dance performance that drew crowds and spread awareness about climate action in the heart of the city.",
+            color: "from-yellow-500/20 to-yellow-500/5",
+            iconColor: "text-yellow-600"
+          }, {
             id: 'mcop-2025',
             icon: Globe,
             title: "MCOP 2025 - Model Conference of Parties",
             year: "2025",
-            description: "A learner-led UN-inspired climate simulation where students from Grades 6-12 act as country representatives, negotiate on pressing climate issues, and design actionable policies aligned with UN SDGs. Join us November 15-16, 2025 at JBCN International School, Parel. Track themes include: Impact of Geopolitical Issues on Climate Change, Climate Finance, Cities & Infrastructure, Carbon Market Mechanisms, and Advanced Technologies. Total prize pool of ₹1,00,000 for top performers!",
+            description: "A learner-led UN-inspired climate simulation where students from Grades 6-12 act as country representatives, negotiate on pressing climate issues, and design actionable policies aligned with UN SDGs. Held November 15-16, 2025 at JBCN International School, Parel. Track themes included: Impact of Geopolitical Issues on Climate Change, Climate Finance, Cities & Infrastructure, Carbon Market Mechanisms, and Advanced Technologies, with a total prize pool of ₹1,00,000 for top performers.",
             color: "from-accent/20 to-accent/5",
             iconColor: "text-accent",
-            status: "FLAGSHIP EVENT"
+            status: "SIGNATURE EVENT"
           }, {
             id: 'forest-cleanup-drive-2025',
             icon: TreePine,
