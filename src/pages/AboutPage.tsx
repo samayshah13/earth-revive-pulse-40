@@ -12,6 +12,8 @@ import PledgeForFuture from '@/components/PledgeForFuture';
 import EcoNewsUpdates from '@/components/EcoNewsUpdates';
 import ClimateActionClock from '@/components/ClimateActionClock';
 import ClimateDataSection from '@/components/ClimateDataSection';
+import NewsletterArchive from '@/components/NewsletterArchive';
+
 const AboutPage = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
@@ -569,7 +571,10 @@ const AboutPage = () => {
         </div>
       </section>
 
+      <NewsletterArchive />
+
       <Footer />
+
     </div>;
 };
 export default AboutPage;
