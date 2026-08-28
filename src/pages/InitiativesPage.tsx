@@ -111,7 +111,7 @@ const InitiativesPage = () => {
             icon: Globe,
             title: "MCOP 2026 - Model Conference of Parties",
             year: "2026",
-            image: "/gallery/mcop-2026.jpg",
+            image: mcop2026Asset.url,
             imageAlt: "MCOP 2026 delegates and mentors with certificates at JBCN International School, Parel",
             description: "India's first UN-backed COP simulation, presented by JBCN International School in collaboration with the JBCN Climate Action Project and CIU (Change Is Us) — our second year partnering with MCOP. Learners from Grades 6-12 step into the roles of country representatives, negotiating climate policy aligned with the UN SDGs. Date: 22nd August 2026 at JBCN International School, Serdia House, Parel.  Junior tracks cover Renewable Energy for All, Food, Water & Agriculture, and Coastal Nations & Resilience; senior tracks cover Climate Justice & Indigenous Rights, Geopolitics of Climate & Energy, and Climate Migration & Human Security. Top performers are recognised as Best Delegate, Outstanding Delegate and Special Mention.",
             color: "from-accent/20 to-accent/5",
