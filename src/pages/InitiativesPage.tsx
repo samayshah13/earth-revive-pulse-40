@@ -8,6 +8,7 @@ import { ArrowRight, TreePine, Sun, Droplets, Recycle, GraduationCap, Users, Wav
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import mcop2026Asset from '@/assets/mcop-2026.jpg.asset.json';
+import earthDayFlashMob2026Asset from '@/assets/earth-day-flash-mob-2026.jpg.asset.json';
 const InitiativesPage = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
