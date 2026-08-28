@@ -569,7 +569,10 @@ const AboutPage = () => {
         </div>
       </section>
 
+      <NewsletterArchive />
+
       <Footer />
+
     </div>;
 };
 export default AboutPage;
