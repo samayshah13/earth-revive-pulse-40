@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Leaf, Instagram, Mail, MapPin, Phone, ArrowUp, Send, Trophy, Calculator, Award, Clock, Sparkles, Target } from 'lucide-react';
+import { Leaf, Instagram, Mail, MapPin, Phone, ArrowUp, Send, Trophy, Calculator, Award, Clock, Sparkles, Target, Newspaper } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { useToast } from '@/hooks/use-toast';
