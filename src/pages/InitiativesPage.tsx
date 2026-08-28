@@ -97,7 +97,7 @@ const InitiativesPage = () => {
             </p>
             <div className="flex flex-wrap gap-2 sm:gap-4 justify-center">
               <Badge variant="secondary" className="text-xs sm:text-sm px-2 sm:px-4 py-1 sm:py-2">
-                11 Past Initiatives
+                14 Initiatives
               </Badge>
               <Badge variant="secondary" className="text-xs sm:text-sm px-2 sm:px-4 py-1 sm:py-2">Active</Badge>
               <Badge variant="secondary" className="text-xs sm:text-sm px-2 sm:px-4 py-1 sm:py-2">JOIN !!!</Badge>
@@ -106,14 +106,45 @@ const InitiativesPage = () => {
 
           <div className="space-y-8">
             {[{
+            id: 'mcop-2026',
+            icon: Globe,
+            title: "MCOP 2026 - Model Conference of Parties",
+            year: "2026",
+            image: "/gallery/mcop-2026.jpg",
+            imageAlt: "MCOP 2026 delegates and mentors with certificates at JBCN International School, Parel",
+            description: "India's first UN-backed COP simulation, presented by JBCN International School in collaboration with the JBCN Climate Action Project and CIU (Change Is Us) — our second year partnering with MCOP. Learners from Grades 6-12 step into the roles of country representatives, negotiating climate policy aligned with the UN SDGs. Date: 22nd August 2026 at JBCN International School, Serdia House, Parel. Participation fee ₹2,199 (inclusive of meals, delegate kit, memorabilia & taxes). Junior tracks cover Renewable Energy for All, Food, Water & Agriculture, and Coastal Nations & Resilience; senior tracks cover Climate Justice & Indigenous Rights, Geopolitics of Climate & Energy, and Climate Migration & Human Security. Top performers are recognised as Best Delegate, Outstanding Delegate and Special Mention.",
+            color: "from-accent/20 to-accent/5",
+            iconColor: "text-accent",
+            status: "FLAGSHIP EVENT"
+          }, {
+            id: 'earth-day-assembly-2026',
+            icon: Globe,
+            title: "Earth Day Assembly 2026",
+            year: "2026",
+            image: "/gallery/earth-day-assembly-2026.jpg",
+            imageAlt: "Climate Action Project Earth Day Assembly 2026 stage at JBCN International School, Parel",
+            description: "Our Earth Day Assembly 2026 brought the climate message to life through a powerful student-led act. Learners performed a dramatic piece portraying the Earth's plea — scenes of deforestation, choking air, plastic-filled oceans and rising heat gave way to a hopeful turn where young changemakers chose to act. Through dialogue, movement and music, the cast urged the audience to cut waste, save energy, plant more and consume responsibly. The performance was followed by pledges from every grade, turning a single morning assembly into a school-wide commitment to protect the planet.",
+            color: "from-secondary/20 to-secondary/5",
+            iconColor: "text-secondary"
+          }, {
+            id: 'earth-day-flash-mob-2026',
+            icon: Palette,
+            title: "Earth Day Flash Mob 2026 - Marine Drive",
+            year: "2026",
+            image: "/gallery/earth-day-flash-mob-2026.jpg",
+            imageAlt: "Students holding hand-made climate posters during the Earth Day flash mob at Marine Drive, Mumbai",
+            description: "We organised a Flash Mob and Walk of Awareness at Marine Drive, Mumbai, to celebrate Earth Day and promote environmental consciousness. The event featured vibrant posters created by students and an energetic dance performance that drew crowds and spread awareness about climate action in the heart of the city.",
+            color: "from-yellow-500/20 to-yellow-500/5",
+            iconColor: "text-yellow-600"
+          }, {
             id: 'mcop-2025',
             icon: Globe,
             title: "MCOP 2025 - Model Conference of Parties",
             year: "2025",
-            description: "A learner-led UN-inspired climate simulation where students from Grades 6-12 act as country representatives, negotiate on pressing climate issues, and design actionable policies aligned with UN SDGs. Join us November 15-16, 2025 at JBCN International School, Parel. Track themes include: Impact of Geopolitical Issues on Climate Change, Climate Finance, Cities & Infrastructure, Carbon Market Mechanisms, and Advanced Technologies. Total prize pool of ₹1,00,000 for top performers!",
+            description: "A learner-led UN-inspired climate simulation where students from Grades 6-12 act as country representatives, negotiate on pressing climate issues, and design actionable policies aligned with UN SDGs. Held November 15-16, 2025 at JBCN International School, Parel. Track themes included: Impact of Geopolitical Issues on Climate Change, Climate Finance, Cities & Infrastructure, Carbon Market Mechanisms, and Advanced Technologies, with a total prize pool of ₹1,00,000 for top performers.",
             color: "from-accent/20 to-accent/5",
             iconColor: "text-accent",
-            status: "FLAGSHIP EVENT"
+            status: "SIGNATURE EVENT"
           }, {
             id: 'forest-cleanup-drive-2025',
             icon: TreePine,
@@ -218,7 +249,7 @@ const InitiativesPage = () => {
                           {initiative.status || 'COMPLETED'}
                         </Badge>
                       </div>
-                      {initiative.id === 'mcop-2025' ? <img src="/gallery/mcop-2025.png" alt="MCOP 2025 - Model Conference of Parties presentation with speaker at JBCN International School" className="w-full h-full object-cover" /> : initiative.id === 'forest-cleanup-drive-2025' ? <img src="/gallery/forest-cleanup-drive.jpg" alt="Forest Cleanup Drive 2025 - Students participating in forest restoration and cleanup activities at BNHS Conservation Education Centre" className="w-full h-full object-cover" /> : initiative.id === 'post-visarjan-beach-cleanup-2025' ? <img src="/lovable-uploads/ac5a0ffe-a03a-488c-ad6e-ee9e6ff71666.png" alt="Post-Visarjan Beach Cleanup 2025 - JBCN International School students holding banner during beach cleanup at Chowpatty Beach" className="w-full h-full object-cover" /> : initiative.id === 'green-initiative' ? <img src="/lovable-uploads/d7dc9d72-6f8f-42e6-a5eb-3ab3c6198f71.png" alt="Green Initiative - Students learning gardening and environmental responsibility in an outdoor classroom setting" className="w-full h-full object-cover" /> : initiative.id === 'beach-cleanup-2023' ? <img src="/lovable-uploads/6e5750b1-b79d-41a4-939a-303b742736fd.png" alt="Beach Clean-Up 2023 - Students and volunteers cleaning the shoreline with Mumbai skyline in background" className="w-full h-full object-cover" /> : initiative.id === 'waste-management' ? <img src="/lovable-uploads/3c6f412e-57fd-4e87-b17f-1fc0c0fe40f8.png" alt="Waste Management 2023 - Students attending an educational presentation about waste management and environmental sustainability" className="w-full h-full object-cover" /> : initiative.id === 'tree-plantation' ? <img src="/lovable-uploads/eb3af96b-9040-4af6-ac20-ae157e18d16e.png" alt="Tree Plantation 2023 - Students actively participating in tree planting activities for environmental restoration" className="w-full h-full object-cover" /> : initiative.id === 'food-recipe' ? <img src="/lovable-uploads/food-recipe-primary.png" alt="Food Recipe Initiative - Primary student preparing healthy and sustainable food with local ingredients" className="w-full h-full object-cover" /> : initiative.id === 'inspirus' ? <div className="w-full h-full bg-gradient-to-br from-muted to-muted/50 flex gap-2 p-2">
+                      {initiative.image ? <img src={initiative.image} alt={initiative.imageAlt} className="w-full h-full object-cover" /> : initiative.id === 'mcop-2025' ? <img src="/gallery/mcop-2025.png" alt="MCOP 2025 - Model Conference of Parties presentation with speaker at JBCN International School" className="w-full h-full object-cover" /> : initiative.id === 'forest-cleanup-drive-2025' ? <img src="/gallery/forest-cleanup-drive.jpg" alt="Forest Cleanup Drive 2025 - Students participating in forest restoration and cleanup activities at BNHS Conservation Education Centre" className="w-full h-full object-cover" /> : initiative.id === 'post-visarjan-beach-cleanup-2025' ? <img src="/lovable-uploads/ac5a0ffe-a03a-488c-ad6e-ee9e6ff71666.png" alt="Post-Visarjan Beach Cleanup 2025 - JBCN International School students holding banner during beach cleanup at Chowpatty Beach" className="w-full h-full object-cover" /> : initiative.id === 'green-initiative' ? <img src="/lovable-uploads/d7dc9d72-6f8f-42e6-a5eb-3ab3c6198f71.png" alt="Green Initiative - Students learning gardening and environmental responsibility in an outdoor classroom setting" className="w-full h-full object-cover" /> : initiative.id === 'beach-cleanup-2023' ? <img src="/lovable-uploads/6e5750b1-b79d-41a4-939a-303b742736fd.png" alt="Beach Clean-Up 2023 - Students and volunteers cleaning the shoreline with Mumbai skyline in background" className="w-full h-full object-cover" /> : initiative.id === 'waste-management' ? <img src="/lovable-uploads/3c6f412e-57fd-4e87-b17f-1fc0c0fe40f8.png" alt="Waste Management 2023 - Students attending an educational presentation about waste management and environmental sustainability" className="w-full h-full object-cover" /> : initiative.id === 'tree-plantation' ? <img src="/lovable-uploads/eb3af96b-9040-4af6-ac20-ae157e18d16e.png" alt="Tree Plantation 2023 - Students actively participating in tree planting activities for environmental restoration" className="w-full h-full object-cover" /> : initiative.id === 'food-recipe' ? <img src="/lovable-uploads/food-recipe-primary.png" alt="Food Recipe Initiative - Primary student preparing healthy and sustainable food with local ingredients" className="w-full h-full object-cover" /> : initiative.id === 'inspirus' ? <div className="w-full h-full bg-gradient-to-br from-muted to-muted/50 flex gap-2 p-2">
                           <div className="flex-1 rounded-lg overflow-hidden">
                             <img src="/lovable-uploads/4056d3dc-ea87-4364-ac36-e56903620153.png" alt="InspirUs Art Installation - Students viewing environmental art installation made from waste materials" className="w-full h-full object-cover" />
                           </div>

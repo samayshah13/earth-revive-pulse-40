@@ -9,7 +9,7 @@ const Navigation = () => {
   const [showHeartAnimation, setShowHeartAnimation] = useState(false);
   const [lastTap, setLastTap] = useState(0);
   const [showInitiativesDropdown, setShowInitiativesDropdown] = useState(false);
-  const dropdownTimeout = useRef<NodeJS.Timeout | null>(null);
+  const dropdownTimeout = useRef<ReturnType<typeof setTimeout> | null>(null);
   const location = useLocation();
 
   const handleDropdownEnter = () => {
