@@ -133,7 +133,7 @@ const InitiativesPage = () => {
             icon: Palette,
             title: "Earth Day Flash Mob 2026 - Marine Drive",
             year: "2026",
-            image: "/gallery/earth-day-flash-mob-2026.jpg",
+            image: earthDayFlashMob2026Asset.url,
             imageAlt: "Students holding hand-made climate posters during the Earth Day flash mob at Marine Drive, Mumbai",
             description: "We organised a Flash Mob and Walk of Awareness at Marine Drive, Mumbai, to celebrate Earth Day and promote environmental consciousness. The event featured vibrant posters created by students and an energetic dance performance that drew crowds and spread awareness about climate action in the heart of the city.",
             color: "from-yellow-500/20 to-yellow-500/5",
