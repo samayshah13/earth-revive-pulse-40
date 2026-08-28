@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Globe, Leaf, Star, Heart, Play } from 'lucide-react';
+import { Globe, Leaf, Star, Heart } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -334,15 +334,6 @@ const GalleryPage = () => {
     }
   ];
 
-  const videoItems = [
-    { id: 1, title: 'Climate Action Initiative', embedUrl: 'https://streamable.com/e/tv2nwu', aspectRatio: '177.941%' },
-    { id: 2, title: 'Environmental Awareness Drive', embedUrl: 'https://streamable.com/e/yc6jza', aspectRatio: '177.778%' },
-    { id: 3, title: 'Community Cleanup Event', embedUrl: 'https://streamable.com/e/4j1tcy', aspectRatio: '177.778%' },
-    { id: 4, title: 'Green Earth Campaign', embedUrl: 'https://streamable.com/e/ncfij0', aspectRatio: '177.778%' },
-    { id: 5, title: 'Sustainability Workshop', embedUrl: 'https://streamable.com/e/24wuzp', aspectRatio: '177.778%' },
-    { id: 6, title: 'Nature Conservation Project', embedUrl: 'https://streamable.com/e/vzglve', aspectRatio: '75.000%' },
-    { id: 7, title: 'Youth Environmental Leaders', embedUrl: 'https://streamable.com/e/sl857j', aspectRatio: '177.778%' },
-  ];
 
 
 
@@ -550,90 +541,6 @@ const GalleryPage = () => {
           </div>
         </section>
 
-        {/* Video Corner Section */}
-        <section className="px-4 pb-32 relative">
-          <div className="container mx-auto">
-            {/* Section Header */}
-            <motion.div
-              className="text-center mb-16"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-              <div className="inline-flex items-center gap-3 mb-4">
-                <Play className="w-8 h-8 text-primary" />
-                <h2 
-                  className="text-4xl md:text-6xl font-black"
-                  style={{ 
-                    background: `linear-gradient(45deg, 
-                      hsl(var(--primary)), 
-                      hsl(var(--accent)), 
-                      hsl(var(--primary))`,
-                    backgroundClip: 'text',
-                    WebkitBackgroundClip: 'text',
-                    color: 'transparent',
-                  }}
-                >
-                  Video Corner
-                </h2>
-                <Play className="w-8 h-8 text-primary" />
-              </div>
-              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Watch our environmental initiatives in action
-              </p>
-            </motion.div>
-
-            {/* Video Grid */}
-            <motion.div 
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 1 }}
-            >
-              {videoItems.map((video, index) => (
-                <motion.div
-                  key={video.id}
-                  className="group relative"
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ 
-                    delay: index * 0.1,
-                    duration: 0.6,
-                    ease: "easeOut"
-                  }}
-                >
-                  <Card className="overflow-hidden bg-card/50 backdrop-blur-sm border-border/50 hover:border-primary/50 transition-all duration-500">
-                    <CardContent className="p-0 relative">
-                      {/* Video Embed */}
-                      <div 
-                        className="relative w-full"
-                        style={{ paddingBottom: video.aspectRatio }}
-                      >
-                        <iframe
-                          src={`${video.embedUrl}?`}
-                          allow="fullscreen"
-                          allowFullScreen
-                          className="absolute inset-0 w-full h-full border-none"
-                          title={video.title}
-                        />
-                      </div>
-                      
-                      {/* Title Overlay */}
-                      <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 via-black/40 to-transparent pointer-events-none">
-                        <h3 className="text-white font-semibold text-lg leading-tight">
-                          {video.title}
-                        </h3>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </motion.div>
-              ))}
-            </motion.div>
-          </div>
-        </section>
 
       </main>
       
