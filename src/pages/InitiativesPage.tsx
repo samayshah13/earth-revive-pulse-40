@@ -7,6 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { ArrowRight, TreePine, Sun, Droplets, Recycle, GraduationCap, Users, Waves, Calendar, Clock, MapPin, ExternalLink, Leaf, ChefHat, Palette, Globe } from 'lucide-react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import mcop2026Asset from '@/assets/mcop-2026.jpg.asset.json';
 const InitiativesPage = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, {
