@@ -243,7 +243,7 @@ const InitiativesPage = () => {
                 <Card className={`shadow-hero border-2 border-primary/20 bg-gradient-to-br ${initiative.color} hover:shadow-glow transition-all duration-500 group overflow-hidden`}>
                   <div className={`flex flex-col ${isEvenIndex ? 'lg:flex-row' : 'lg:flex-row-reverse'} h-full`}>
                     {/* Initiative Image */}
-                    <div className="w-full lg:w-1/2 min-h-[250px] sm:min-h-[300px] lg:min-h-[400px] relative overflow-hidden">
+                    <div className="w-full lg:w-1/2 min-h-[250px] sm:min-h-[300px] lg:min-h-[400px] relative overflow-hidden bg-muted/30">
                       <div className="absolute top-4 left-4 z-10">
                         <Badge className={initiative.status === 'FLAGSHIP EVENT' ? "bg-gradient-to-r from-purple-600 to-pink-600 text-background font-semibold" : "bg-gradient-eco text-background font-semibold"}>
                           {initiative.status || 'COMPLETED'}
