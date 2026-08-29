@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Globe, Leaf, Star, Heart } from 'lucide-react';
+import { Globe, Leaf, Star, Heart, ExternalLink } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -452,7 +452,7 @@ const GalleryPage = () => {
 
               {/* Interactive Stats */}
               <motion.div
-                className="flex justify-center gap-12 mb-16"
+                className="flex justify-center gap-12 mb-12"
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.8 }}
@@ -472,6 +472,31 @@ const GalleryPage = () => {
                     </div>
                   </motion.div>
                 ))}
+              </motion.div>
+
+              {/* Google Drive Photos Button */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 1.1, duration: 0.8 }}
+                className="relative z-10"
+              >
+                <a
+                  href="https://drive.google.com/drive/folders/15-Jck-AIKdcNUaOmYO2f33uMMn-gqnaj?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group inline-flex items-center gap-3 px-8 py-4 rounded-full font-bold text-lg text-white shadow-2xl shadow-primary/40 bg-gradient-to-r from-primary via-accent to-primary bg-[length:200%_auto] hover:bg-[position:100%_0] transition-all duration-500 hover:scale-105 hover:shadow-primary/60"
+                >
+                  <span className="relative flex h-3 w-3">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+                  </span>
+                  View All Photos on Google Drive
+                  <ExternalLink className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform duration-300" />
+                </a>
+                <p className="text-sm text-muted-foreground mt-4">
+                  Explore our complete collection of event memories
+                </p>
               </motion.div>
             </motion.div>
           </div>
